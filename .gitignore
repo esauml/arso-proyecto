@@ -1,0 +1,12 @@
+#node modules
+node_modules/
+
+# build
+build/
+dist/
+
+# parcel cache
+.parcel-cache/
+
+# vscode 
+.vscode/

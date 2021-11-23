@@ -1,0 +1,23 @@
+{
+  "name": "test-firebase-1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run build && npm run serve",
+    "build": "rm -rf build && tsc && npm run cphtml",
+    "cphtml": "cp -R src/views build",
+    "serve": "parcel build/views/index.html"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "firebase": "^9.5.0"
+  },
+  "devDependencies": {
+    "parcel": "^2.0.1",
+    "typescript": "^4.5.2"
+  }
+}

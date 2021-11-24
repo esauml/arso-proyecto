@@ -8,7 +8,9 @@
     "start": "npm run build && npm run serve",
     "build": "rm -rf build && tsc && npm run cphtml",
     "cphtml": "cp -R src/views build",
-    "serve": "parcel build/views/index.html"
+    "serve": "parcel build/views/index.html",
+    "prettier-format": "prettier --config .prettierrc 'src/**/*.ts' --write",
+    "lint": "lint . --ext .ts"
   },
   "keywords": [],
   "author": "",
@@ -17,7 +19,11 @@
     "firebase": "^9.5.0"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "eslint": "^8.3.0",
     "parcel": "^2.0.1",
+    "prettier": "^2.4.1",
     "typescript": "^4.5.2"
   }
 }

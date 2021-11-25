@@ -15,7 +15,7 @@ Follow this instructions to run the app
 npm run install
 
 # compiling and running server
-npm run star
+npm run start
 ```
 
 ### only compiling

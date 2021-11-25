@@ -18,13 +18,13 @@ npm run install
 npm run start
 ```
 
-### only compiling
+### Only for compiling
 For `compiling` you could
 ```bash
 npm run build
 ```
 
-### only running
+### Run Only
 For `running` you could
 ```bash
 npm run serve

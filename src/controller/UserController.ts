@@ -1,5 +1,4 @@
 import { Model } from "../global/interface";
-import { IUserCRUD } from "../global/interface/crud";
 import User from "../model/User";
 import UserAppService from "../service/UserAppService";
 

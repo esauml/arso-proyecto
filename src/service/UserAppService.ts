@@ -2,8 +2,9 @@ import { IUserCRUD } from "../global/interface/crud";
 import User from "../model/User";
 import { FakeUserQuery } from "../database/queries/FakeUserQuery";
 import { FakeUserCommands } from "../database/commands/FakeUserCommands";
+import { InstanceDB } from "../global/interface";
 
-export default class UserAppService implements IUserCRUD{
+export default class UserAppService implements IUserCRUD {
     // private db: InstanceDB;
     private db: User[] = [];
 
@@ -17,7 +18,7 @@ export default class UserAppService implements IUserCRUD{
         const dao = new FakeUserQuery(this.db);
         return dao.getAll();
     }
-    
+
     get(id: number): User {
         // instance of queries of dao
         const dao = new FakeUserQuery(this.db);

@@ -9,6 +9,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       title: 'Proyecto ARSO',
+      template: 'src/views/index.html'
     }),
   ],
 

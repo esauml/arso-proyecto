@@ -1,0 +1,49 @@
+# GET All
+GET http://localhost:8080/api/users/
+
+###
+
+# GET By Id
+GET http://localhost:8080/api/users/oohS8ILIEafqk4GoUckj
+
+###
+
+# GET All Public 
+GET http://localhost:8080/api/users/public
+
+###
+
+# GET By Id Public 
+GET http://localhost:8080/api/users/public/oohS8ILIEafqk4GoUckj
+
+###
+
+# POST Good Request
+POST http://localhost:8080/api/users/
+content-type: application/json
+
+{
+    "name": "esau",
+    "username": "user esau",
+    "birthday": "2000/03/22",
+    "email": "esaum@esaum"
+}
+
+###
+
+PUT http://localhost:8080/api/users/
+content-type: application/json
+
+{
+    "id": "oohS8ILIEafqk4GoUckj",
+    // "name": "esau",
+    "username": "last username esau",
+    // "birthday": "2000/03/22",
+    "email": "esaum@esaum"
+}
+
+
+###
+
+# DELETE Specfic User
+DELETE http://localhost:8080/api/users/1-delete

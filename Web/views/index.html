@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <noscript>You have to enable javascript to run this app</noscript>
+
+  <form id="user-form">
+    <label for="id">id</label>
+    <br>
+    <input type="text" name="id" id="id" disabled>
+    <br>
+
+    <label for="name">name</label>
+    <br>
+    <input type="text" name="name" id="name">
+    <br>
+
+    <label for="username">username</label>
+    <br>
+    <input type="text" name="username" id="username">
+    <br>
+
+    <label for="birthday">birthday</label>
+    <br>
+    <input type="date" name="birthday" id="birthday">
+    <br>
+
+    <label for="email">email</label>
+    <br>
+    <input type="email" name="email" id="email">
+
+    <br><br>
+    <button type="submit" id="apply" data-todo="create">Apply</button>
+    <button type="reset">Clear</button>
+  </form>
+
+  <br>
+  <br>
+
+  <div id="app">
+    <table border="1">
+      <thead>
+        <tr>
+          <th>id</th>
+          <th>nombre</th>
+          <th>username</th>
+          <th>birthday</th>
+          <th>email</th>
+        </tr>
+      </thead>
+
+      <tbody id="user-table-body"></tbody>
+    </table>
+  </div>
+
+</body>
+
+</html>

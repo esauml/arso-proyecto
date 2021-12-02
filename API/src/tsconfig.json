@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        "module": "commonjs",
+        "target": "ES6",
+        "rootDir": "./",
+        "esModuleInterop": true,
+        "moduleResolution": "Node",
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "sourceMap": true,
+        "allowSyntheticDefaultImports": true,
+    }
+}

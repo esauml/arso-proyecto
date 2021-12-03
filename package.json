@@ -4,7 +4,7 @@
   "description": "Septimo Cuatrimestre: Proyecto Arquitectura de Software",
   "private": true,
   "scripts": {
-    "start": "npm run install && npm run serve",
+    "start": "npm run serve",
     "install": "(cd API/ && npm i) && (cd Web/ && npm i)",
     "serve": "concurrently \"npm run api\" \"npm run web\"",
     "api": "(cd API/ && npm run serve)",

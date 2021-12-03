@@ -1,6 +1,5 @@
 import express from 'express';
 import UserAppService from './application/UserAppService';
-import UserUpdate from './domain/UserUpdate';
 
 const router = express.Router();
 

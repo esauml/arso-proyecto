@@ -3,8 +3,12 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   entry: './js/index.ts',
-  devtool: 'inline-source-map',
-  mode: 'development',
+  devtool: false,
+  mode: 'production',
+
+  optimization: {
+    runtimeChunk: 'single',
+  },
 
   plugins: [
     new HtmlWebpackPlugin({

@@ -147,7 +147,7 @@ export class UserViewModel {
     async createUser(user: User) {
         console.log('Subscriber: I will create', user);
 
-        await axios.post(' http://localhost:8080/api/users', { ...user }).then(result => {
+        await axios.post(' http://localhost:8081/api/users', { ...user }).then(result => {
             this.notifyModelChange();
 
             this.fillTable(this.getUsers);
@@ -158,7 +158,7 @@ export class UserViewModel {
         console.log('Subscriber: I will update', user);
 
 
-        await axios.put(' http://localhost:8080/api/users', { ...user }).then(result => {
+        await axios.put(' http://localhost:8081/api/users', { ...user }).then(result => {
             this.notifyModelChange();
 
             this.fillTable(this.getUsers);
@@ -170,7 +170,7 @@ export class UserViewModel {
     async deleteUser(user: User) {
         console.log('Subscriber: I will delete', user);
 
-        await axios.delete(' http://localhost:8080/api/users/' + user.id).then(result => {
+        await axios.delete(' http://localhost:8081/api/users/' + user.id).then(result => {
             this.notifyModelChange();
 
             this.fillTable(this.getUsers);
@@ -181,7 +181,7 @@ export class UserViewModel {
 
     async getUsers() {
         console.log('Subscriber: I will get all');
-        const response = await axios.get(' http://localhost:8080/api/users/');
+        const response = await axios.get(' http://localhost:8081/api/users/');
 
         return response;
     }
@@ -189,7 +189,7 @@ export class UserViewModel {
     async getUser(user: User) {
         console.log('Subscriber: I will get user', user);
 
-        const response = await axios.get(' http://localhost:8080/api/users/' + user.id);
+        const response = await axios.get(' http://localhost:8081/api/users/' + user.id);
 
         return response;
     }
@@ -197,7 +197,7 @@ export class UserViewModel {
     async getUsersPublic() {
         console.log('Subscriber: I will get users public');
 
-        const response = await axios.get(' http://localhost:8080/api/users/public');
+        const response = await axios.get(' http://localhost:8081/api/users/public');
 
         return response;
     }
@@ -205,7 +205,7 @@ export class UserViewModel {
     async getUserPublic(user: User) {
         console.log('Subscriber: I will get users public', user);
 
-        const response = await axios.get(' http://localhost:8080/api/users/public' + user.id);
+        const response = await axios.get(' http://localhost:8081/api/users/public' + user.id);
 
         return response;
     }

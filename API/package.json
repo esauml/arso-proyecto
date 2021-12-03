@@ -4,7 +4,9 @@
   "description": "",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "nodemon src/index.ts"
+    "dev": "nodemon src/index.ts",
+    "serve": "npm run tsc && node build/src/index.js",
+    "tsc": "tsc"
   },
   "keywords": [],
   "author": "",
